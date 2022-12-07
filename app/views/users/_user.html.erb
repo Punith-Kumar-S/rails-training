@@ -1,0 +1,16 @@
+<div id="<%= dom_id user %>">
+<%= stylesheet_link_tag "table.css" %>
+  <tr>
+    <td><%= user.id%></td>
+    <td><%= user.user_id%></td>
+    <td><%= user.first_name%></td>
+    <td><%= user.last_name%></td>
+    <td><%= user.email%></td>
+    <td><%= user.age%></td>
+    <td><%= user.gender%></td>
+    <td><%= user.country%></td>
+    <td> 
+    <%= link_to "Show", user %></td>
+  </tr>
+
+</div>

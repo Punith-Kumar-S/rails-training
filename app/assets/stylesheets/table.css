@@ -1,0 +1,15 @@
+
+table, th, td {
+  text-align: center;
+  padding: 8px; 
+  border: 2px solid black;
+  border-radius: 10px;
+  border-color: aquamarine;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+h1{
+  color: #04AA6D;
+}

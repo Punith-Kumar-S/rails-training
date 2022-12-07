@@ -1,0 +1,15 @@
+<div id="<%= dom_id company %>">
+<%= stylesheet_link_tag "table.css" %>
+  <tr>
+    <td><%= company.id%></td>
+    <td><%= company.company_id%></td>
+    <td><%= company.company_name%></td>
+    <td><%= company.no_of_employee%></td>
+    <td><%= company.address%></td>
+    <td><%= company.department_name%></td>
+    <td><%= company.phone_number%></td>
+    <td> 
+    <%= link_to "Show", company%></td>
+  </tr>
+
+</div>

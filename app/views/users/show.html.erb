@@ -1,0 +1,37 @@
+<center>
+<%= stylesheet_link_tag "table.css" %>
+<div>
+  <%= link_to "Back to answers", users_path %>
+</div>
+</br>
+<table>
+<tr>
+<th>ID</th>
+<th>User_id</th>
+<th>First_name</th>
+<th>Last_name</th>
+<th>Email</th>
+<th>Age</th>
+<th>Gender</th>
+<th>Country</th>
+<th>View</th>
+</tr>
+<%= render @user %>
+</table>
+</center>
+<style>
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px; 
+  border: 1px solid black;
+  border-radius: 10px;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+h1{
+  color: #04AA6D;
+}
+</style>

@@ -1,0 +1,18 @@
+<center>
+<%= stylesheet_link_tag "table.css" %>
+<div>
+  <%= link_to "Back to answers", roles_path %>
+</div>
+</br>
+<table>
+<tr>
+<th>ID</th>
+<th>Role_id</th>
+<th>Project_name</th>
+<th>Role_name</th>
+<th>Role_code</th>
+<th>View</th>
+</tr>
+<%= render @role %>
+</table>
+</center>

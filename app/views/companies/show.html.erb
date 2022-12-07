@@ -1,0 +1,20 @@
+<center>
+<%= stylesheet_link_tag "table.css" %>
+<div>
+  <%= link_to "Back to answers", companies_path %>
+</div>
+</br>
+<table>
+<tr>
+<th>ID</th>
+<th>Company_id</th>
+<th>Compay_name</th>
+<th>No_of_employee</th>
+<th>Address</th>
+<th>Department_name</th>
+<th>Phone_number</th>
+<th>Country</th>
+</tr>
+<%= render @company %>
+</table>
+</center>

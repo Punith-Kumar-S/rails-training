@@ -1,0 +1,31 @@
+<center>
+<%= stylesheet_link_tag "table.css" %>
+<h1>ROLES TABLE</h1>
+</br>
+</br>
+<div>
+  <%= link_to "Back to answers", users_path %>
+</div>
+</br>
+<div id="company">
+<table>
+<tr>
+<th>ID</th>
+<th>Role_id</th>
+<th>Project_name</th>
+<th>Role_name</th>
+<th>Role_code</th>
+<th>View</th>
+</tr>
+  <% @roles.each do |role| %>
+    <%= render role %>
+  <% end %>
+</div>
+</table>
+</br>
+<%= paginate @roles%>
+</center>
+
+
+
+

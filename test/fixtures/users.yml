@@ -2,6 +2,8 @@
 
 one:
   user_id: 1
+  company_id: 1
+  role_id: 1
   first_name: MyString
   last_name: MyString
   email: MyString
@@ -11,6 +13,8 @@ one:
 
 two:
   user_id: 1
+  company_id: 1
+  role_id: 1
   first_name: MyString
   last_name: MyString
   email: MyString

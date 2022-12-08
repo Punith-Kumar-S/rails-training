@@ -16,8 +16,9 @@ class UsersController < ApplicationController
             redirect_to users_path and return
         else
             @parameter =params[:search].downcase
-            @results =User.all.where("lower(first_name) LIKE :search or lower(last_name) LIKE :search
+            @trail =User.all.where("lower(first_name) LIKE :search or lower(last_name) LIKE :search
             or lower(email) LIKE :search or lower(gender) LIKE :search or lower(country) LIKE :search",search: "%#{@parameter}%")
+            @results=@trail.page(params[:page])
         end
     end
   

@@ -13,23 +13,29 @@
     </div>
 </div>
 <%end%>
-
-</br>
+<h1>SEARCH RESULTS</h1>
 <table>
 <tr>
 <th>ID</th>
-<th>User_id</th>
 <th>First_name</th>
 <th>Last_name</th>
 <th>Email</th>
 <th>Age</th>
 <th>Gender</th>
 <th>Country</th>
+<th>Company_name</th>
+<th>No_of_employee</th>
+<th>Address</th>
+<th>Department_name</th>
+<th>Phone_number</th>
+<th>Project_name</th>
+<th>Role_name</th>
+<th>Role_code</th>
 <th>View</th>
 </tr>
-<h1>SEARCH RESULTS</h1>
 <% @results.each do |result| %>
     <%= render result %> <br>
 <% end%>
-
+</table></br>
+<%= paginate @results%>
 </center>
